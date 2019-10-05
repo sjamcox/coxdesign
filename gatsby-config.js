@@ -1,11 +1,13 @@
 module.exports = {
   siteMetadata: {
+    siteUrl: `https://coxdesign.co`,
     title: `Cox Design`,
     description: `Portfolio of Sam Cox. Web Developer. Graphic Designer.`,
     author: `@sjamcox`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sitemap`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-styled-components`,
@@ -26,11 +28,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Cox Design`,
+        short_name: `Cox Design`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#333333`,
+        theme_color: `#333333`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
@@ -45,9 +47,6 @@ module.exports = {
       }
     },
     `gatsby-plugin-netlify`,
-
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-offline`,
   ],
 }
