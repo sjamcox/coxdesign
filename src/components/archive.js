@@ -6,6 +6,18 @@
  */
 import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
+import styled from 'styled-components'
+
+const ArchiveList = styled.ul`
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  a {
+    text-decoration: underline;
+    font-size: .9rem;
+    color: #0089d0;
+  }
+`
 
 const POST_ARCHIVE_QUERY = graphql`
 query BlogPostArchive {
@@ -15,7 +27,6 @@ query BlogPostArchive {
     }) {
         edges {
           node {
-            excerpt
             frontmatter {
               title
               slug
@@ -34,12 +45,11 @@ const Archive = () => {
         <aside>
             <h3>Archive</h3>
             {data.allMarkdownRemark.edges.map(edge => (
-                <ul>
+                <ArchiveList>
                     <li key={edge.node.frontmatter.slug}>
-                        <Link to={`/posts${edge.node.frontmatter.slug}`}><h2>{edge.node.frontmatter.title}</h2></Link>
-                        <p>{edge.node.excerpt}</p>
+                        <Link to={`/posts${edge.node.frontmatter.slug}`}>{edge.node.frontmatter.title}</Link>
                     </li>
-                </ul>
+                </ArchiveList>
             ))}
         </aside>
     </>

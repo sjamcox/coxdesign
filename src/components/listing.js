@@ -4,6 +4,31 @@ import { Link, StaticQuery, graphql } from "gatsby"
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
+import styled from 'styled-components'
+
+const Post = styled.article`
+  box-shadow: 0px 3px 10px rgba(25, 17, 34, 0.05);
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+  p {
+    font-size: .9rem;
+  }
+  h2 {
+    margin-bottom: 0;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-weight: bold;
+  }
+  .read-more {
+    text-decoration: underline;
+    font-size: .9rem;
+    color: #0089d0;
+  }
+`
 
 const LISTING_QUERY = graphql
 `query BlogPostListing {
@@ -29,12 +54,12 @@ const Listing = () => (
     query={LISTING_QUERY}
     render={({allMarkdownRemark}) => (
         allMarkdownRemark.edges.map(edge => (
-            <article key={edge.node.frontmatter.slug}>
+            <Post key={edge.node.frontmatter.slug}>
                 <Link to={`/posts${edge.node.frontmatter.slug}`}><h2>{edge.node.frontmatter.title}</h2></Link>
                 <p>{edge.node.frontmatter.date}</p>
                 <p>{edge.node.excerpt}</p>
-                <Link to={`/posts${edge.node.frontmatter.slug}`}>Read More</Link>
-            </article>
+                <Link class="read-more" to={`/posts${edge.node.frontmatter.slug}`}>Read More</Link>
+            </Post>
         ))
     )}
   />
