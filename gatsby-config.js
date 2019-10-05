@@ -43,7 +43,7 @@ module.exports = {
         pedantic: true,
         gfm: true,
       }
-    }
+    },
     `gatsby-plugin-netlify`,
 
     // this (optional) plugin enables Progressive Web App + Offline functionality
