@@ -4,7 +4,6 @@ import React from "react"
 import styled from "styled-components"
 
 const HeaderWrapper = styled.div`
-  margin-bottom:  1.45rem;
   background: #333333;
   img {
     margin-bottom: 0;
