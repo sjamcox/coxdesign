@@ -6,6 +6,9 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -13,8 +16,13 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/src/posts`,
+        name: 'posts'
+      }
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -28,23 +36,11 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        path: `${__dirname}/src/posts`,
-        name: 'posts'
-      }
-    },
-    `gatsby-plugin-styled-components`,
-    {
       resolve: `gatsby-transformer-remark`,
       options: {
-      // CommonMark mode (default: true)
         commonmark: true,
-      // Footnotes mode (default: true)
         footnotes: true,
-      // Pedantic mode (default: true)
         pedantic: true,
-      // GitHub Flavored Markdown mode (default: true)
         gfm: true,
       }
     }
