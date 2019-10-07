@@ -9,21 +9,23 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import styled from 'styled-components'
-import Img from 'gatsby-image'
-import { Spring } from 'react-spring/renderprops'
 import Header from "./header"
 import Archive from "./archive"
 import "./layout.css"
 
 const MainLayout = styled.main`
   margin: 1rem auto;
-  max-width: 90%;
+  max-width: 1000px;
   display: grid;
-  grid-template-columns: 3fr 1fr;
-  grid-gap: 40px;
+  justify-content: center;
+  .post {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+  }
 `
 
-const Layout = ({ children, location }) => {
+const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -47,17 +49,9 @@ const Layout = ({ children, location }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <Spring from={{height: location.pathname == '/' ? 100 : 200}} to={{height: location.pathname == '/' ? 200 : 100}}>
-        {styles => (
-          <div style={{overflow: 'hidden', ...styles}}>
-            <Img fluid={data.file.childImageSharp.fluid} />
-          </div>
-        )}
-      </Spring>
-        {/* {location.pathname == '/' &&} */}
         <MainLayout>
-          <div>
-            {children}
+          <div className="post">
+           {children}
           </div>
           <Archive />
         </MainLayout>
@@ -72,10 +66,6 @@ const Layout = ({ children, location }) => {
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
-}
-
-Layout.defaultProps = {
-  location: {}
 }
 
 export default Layout

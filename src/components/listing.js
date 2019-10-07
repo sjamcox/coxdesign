@@ -1,9 +1,5 @@
 import React from "react"
 import { Link, StaticQuery, graphql } from "gatsby"
-
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
 import styled from 'styled-components'
 
 const Post = styled.article`
@@ -30,9 +26,9 @@ const Post = styled.article`
   }
 `
 
-const LISTING_QUERY = graphql
-`query BlogPostListing {
-    allMarkdownRemark(limit: 10, sort: {
+const LISTING_QUERY = graphql`
+query BlogPostListing {
+    allMarkdownRemark(limit: 3, sort: {
         order: DESC,
         fields: [frontmatter___date]
     }) {

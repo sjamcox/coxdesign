@@ -4,7 +4,7 @@ import React from "react"
 import styled from "styled-components"
 
 const HeaderWrapper = styled.div`
-  background: #333333;
+  background: navy;
   img {
     margin-bottom: 0;
   }
@@ -12,7 +12,7 @@ const HeaderWrapper = styled.div`
 
 const HeaderContainer = styled.div`
   margin: 0 auto;
-  max-width: 1060;
+  width: 1000px;
   padding: 1rem;
 `
 
