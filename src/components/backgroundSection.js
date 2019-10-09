@@ -21,15 +21,14 @@ const BackgroundSection = ({ className }) => {
       <BackgroundImage 
         className={className}
         fluid={data.file.childImageSharp.fluid}>
-        <h1>Hello, my name is Sam.</h1>
-        <p>I create digital experiences.</p>
+        <h1>Hello, my name is Sam. I design and build user experiences.</h1>
       </BackgroundImage>
     )
 }
 
 const StyledBackgroundSection = styled(BackgroundSection)`
     width: 100%;
-    height: 500px;
+    height: 80vh;
     background-position: bottom center;
     background-repeat: repeat-y;
     background-size: cover;
@@ -40,6 +39,7 @@ const StyledBackgroundSection = styled(BackgroundSection)`
     color: white;
     h1 {
         font-size: 70px;
+        margin: 50px;
     }
 `
 
