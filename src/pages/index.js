@@ -1,12 +1,11 @@
 import React from "react"
-import Layout from "../components/layout"
-import Listing from "../components/listing"
+import Layout from "../elements/layout"
+import Listing from "../elements/listing"
 
 const IndexPage = () => {
   return (
     <>
       <Layout>
-        <Listing />
       </Layout>
     </>
     )
