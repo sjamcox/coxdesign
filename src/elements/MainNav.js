@@ -19,8 +19,8 @@ const MainNav = () => {
         <NavContainer>
             <NavList>
                 <NavItem><Link to="/">Home</Link></NavItem>
-                <NavItem><Link to="/posts/third-post">Work</Link></NavItem>
-                <NavItem><Link to="/posts/second-post">Contact</Link></NavItem>
+                <NavItem><Link to="/work">Work</Link></NavItem>
+                <NavItem><Link to="/contact">Contact</Link></NavItem>
             </NavList>
         </NavContainer>
     )
