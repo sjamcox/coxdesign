@@ -1,7 +1,7 @@
 import React from "react"
 import styled from 'styled-components'
 import Header from "./Header"
-import ContentArea from './ContentArea'
+import { ContentArea } from './ContentArea'
 import "./layout.css"
 
 const SiteContainer = styled.div`
@@ -11,11 +11,11 @@ const SiteContainer = styled.div`
   header {
     display: flex;
     flex-direction: column;
-    flex-basis: 300px;
+    flex-basis: 260px;
     flex-grow: 0;
     flex-shrink: 0;
     justify-content: space-between;
-    background-color: #555555;
+    background-color: #ffffff;
     padding: 20px;
   }
 `
@@ -25,7 +25,10 @@ const Layout = () => {
   return (
     <SiteContainer>
       <Header className="header"/>  
-      <ContentArea />
+      <ContentArea>
+        <h1>This is the header.</h1>
+        <p>This is the body paragraph.</p>
+      </ContentArea>
     </SiteContainer>
   )
 }

@@ -7,11 +7,15 @@ const NavContainer = styled.div`
 
 const NavList = styled.ul`
   list-style: none;
+  margin: 0;
+  a {
+    color: hsla(0,0%,0%,0.8);
+  }
 `
 
 const NavItem = styled.li`
-  font-family: Helvetica;
-  margin-bottom: 0;
+  margin-bottom: 10px;
+  font-weight: 700;
 `
 
 const MainNav = () => {

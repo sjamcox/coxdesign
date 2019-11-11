@@ -1,9 +1,11 @@
-import styled from 'styled-components'
+import React from 'react'
 
-const ContentArea = styled.main`
-    width: 100%;
-    background-color: #dddddd;
-`
+export const ContentArea = ({ children }) => {
+    return (
+        <main className="mainContent">
+            {children}
+        </main>
+    )
+}
 
-export default ContentArea
 
