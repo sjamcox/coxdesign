@@ -1,10 +1,20 @@
 .mainContent {
   background-color: #eeeeee;
   width: 100%;
-  padding: 20vh 20vw 20vh 5vw;
+  padding: 20vh 5vw 5vh 5vw;
+  overflow: auto;
+}
+
+.mainText {
+  max-width: 600px;
 }
 
 .monogram {
   margin: 0 0 10px 0;
   font-size: 2.5rem;
+  font-family: 'Source Sans Pro',sans-serif;
+}
+
+.monogram a {
+  color: black;
 }

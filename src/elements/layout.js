@@ -10,6 +10,10 @@ const SiteContainer = styled.div`
   height: 100vh;
   header {
     display: flex;
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 100vh;
     flex-direction: column;
     flex-basis: 260px;
     flex-grow: 0;
@@ -20,14 +24,13 @@ const SiteContainer = styled.div`
   }
 `
 
-const Layout = () => {
+const Layout = ({ children }) => {
 
   return (
     <SiteContainer>
       <Header className="header"/>  
       <ContentArea>
-        <h1>This is the header.</h1>
-        <p>This is the body paragraph.</p>
+        {children}
       </ContentArea>
     </SiteContainer>
   )

@@ -3,7 +3,7 @@ import React from 'react'
 export const ContentArea = ({ children }) => {
     return (
         <main className="mainContent">
-            {children}
+            <div className="mainText">{children}</div>
         </main>
     )
 }
