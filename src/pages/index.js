@@ -1,5 +1,6 @@
 import React from "react"
 import Layout from "../elements/layout"
+import { device } from "../utilities/devices"
 
 const IndexPage = () => {
   return (
