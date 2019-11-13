@@ -22,3 +22,16 @@
 h1 {
   line-height: 2.4rem;
 }
+
+p a {
+  color: orangered;
+  font-weight: 700;
+}
+
+button {
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: none;
+  background: linear-gradient(135deg, #dddddd, #dedede);
+  font-weight: 700;
+}
