@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../elements/layout"
 
-const Work = () => {
+const Projects = () => {
   return (
     <>
       <Layout>
@@ -30,4 +30,4 @@ Etiam dignissim diam quis enim. Proin nibh nisl condimentum id venenatis a condi
     )
 }
 
-export default Work
+export default Projects
