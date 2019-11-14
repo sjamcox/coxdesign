@@ -1,30 +1,30 @@
 import React from "react"
 import Layout from "../elements/layout"
+import { Project } from "../elements/Project"
 
 const Projects = () => {
   return (
     <>
       <Layout>
-          <h1>This is the work page.</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nulla at volutpat diam ut venenatis tellus. Enim sit amet venenatis urna cursus eget. Felis eget nunc lobortis mattis. Risus commodo viverra maecenas accumsan lacus vel facilisis volutpat est. Sagittis purus sit amet volutpat consequat mauris. Malesuada pellentesque elit eget gravida cum sociis natoque. Dapibus ultrices in iaculis nunc sed augue lacus viverra vitae. Enim nunc faucibus a pellentesque. Consectetur a erat nam at lectus urna duis convallis convallis. Egestas fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate sapien. Rutrum quisque non tellus orci ac auctor. Porttitor leo a diam sollicitudin tempor id eu. Pellentesque nec nam aliquam sem et tortor. Viverra orci sagittis eu volutpat odio. Vestibulum sed arcu non odio euismod lacinia at. Pretium aenean pharetra magna ac placerat. Est ullamcorper eget nulla facilisi etiam dignissim diam. Arcu cursus euismod quis viverra nibh cras pulvinar mattis nunc. Adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus urna.
-
-Fusce ut placerat orci nulla pellentesque dignissim enim sit. Odio ut enim blandit volutpat maecenas volutpat. At lectus urna duis convallis convallis tellus id. Dignissim cras tincidunt lobortis feugiat vivamus at augue eget arcu. Amet porttitor eget dolor morbi non arcu risus quis varius. Cursus in hac habitasse platea dictumst quisque. Aenean pharetra magna ac placerat vestibulum lectus mauris ultrices eros. Aliquam nulla facilisi cras fermentum odio eu. In nibh mauris cursus mattis. Risus pretium quam vulputate dignissim. Nec dui nunc mattis enim ut tellus. Pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Ut enim blandit volutpat maecenas volutpat blandit aliquam.
-
-Habitant morbi tristique senectus et netus et malesuada fames ac. Lacus vestibulum sed arcu non odio euismod lacinia. Quis imperdiet massa tincidunt nunc. Aliquam malesuada bibendum arcu vitae elementum curabitur vitae nunc sed. Cum sociis natoque penatibus et. Nulla posuere sollicitudin aliquam ultrices sagittis orci a scelerisque purus. Vestibulum lorem sed risus ultricies tristique nulla aliquet enim. Erat pellentesque adipiscing commodo elit at imperdiet dui accumsan sit. Nunc pulvinar sapien et ligula ullamcorper malesuada proin libero nunc. Odio ut sem nulla pharetra diam sit amet nisl suscipit. Tellus pellentesque eu tincidunt tortor aliquam nulla. Id volutpat lacus laoreet non curabitur gravida arcu. Urna et pharetra pharetra massa massa ultricies mi.
-
-Facilisis leo vel fringilla est ullamcorper eget. Urna duis convallis convallis tellus id interdum velit laoreet. Vestibulum lectus mauris ultrices eros in cursus turpis massa. Pharetra et ultrices neque ornare aenean euismod elementum nisi quis. Eleifend mi in nulla posuere sollicitudin aliquam. Ultrices vitae auctor eu augue ut lectus. Pellentesque eu tincidunt tortor aliquam. Massa tincidunt dui ut ornare. Velit scelerisque in dictum non consectetur a. Gravida dictum fusce ut placerat orci. Tempor id eu nisl nunc mi ipsum faucibus. Mauris ultrices eros in cursus turpis massa. Ornare quam viverra orci sagittis eu volutpat odio facilisis mauris. Ullamcorper eget nulla facilisi etiam. Nullam vehicula ipsum a arcu cursus vitae. Purus gravida quis blandit turpis. Lacus vestibulum sed arcu non odio euismod lacinia at quis. Ut diam quam nulla porttitor massa id neque aliquam. Turpis in eu mi bibendum.
-
-Leo vel orci porta non pulvinar neque. Sed felis eget velit aliquet. Enim sed faucibus turpis in eu. Bibendum arcu vitae elementum curabitur vitae nunc sed. Pellentesque pulvinar pellentesque habitant morbi tristique senectus et netus. Sit amet justo donec enim. Arcu cursus euismod quis viverra nibh cras pulvinar mattis nunc. Justo donec enim diam vulputate. Diam maecenas ultricies mi eget mauris pharetra et. Donec ac odio tempor orci dapibus ultrices in iaculis. Donec pretium vulputate sapien nec sagittis aliquam.
-
-Facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum. Sit amet venenatis urna cursus eget nunc scelerisque viverra. A erat nam at lectus urna duis convallis. Et egestas quis ipsum suspendisse ultrices gravida. Sit amet consectetur adipiscing elit ut aliquam purus. Lorem ipsum dolor sit amet consectetur. Nisl pretium fusce id velit ut tortor pretium viverra. Amet consectetur adipiscing elit ut aliquam purus sit. Consequat ac felis donec et odio. Dolor sit amet consectetur adipiscing elit duis tristique sollicitudin nibh. Risus commodo viverra maecenas accumsan lacus. Penatibus et magnis dis parturient montes.
-
-Mollis nunc sed id semper risus in hendrerit gravida. Ut consequat semper viverra nam libero justo laoreet sit amet. Quis blandit turpis cursus in hac habitasse platea dictumst quisque. Massa massa ultricies mi quis hendrerit dolor. Auctor eu augue ut lectus arcu bibendum at. Neque vitae tempus quam pellentesque nec. Sollicitudin tempor id eu nisl nunc mi ipsum faucibus vitae. Faucibus pulvinar elementum integer enim neque volutpat ac tincidunt vitae. Suspendisse faucibus interdum posuere lorem ipsum dolor sit. Risus feugiat in ante metus dictum at tempor commodo ullamcorper. Quam vulputate dignissim suspendisse in est ante in nibh mauris. Eu lobortis elementum nibh tellus molestie. Congue eu consequat ac felis donec et. Est lorem ipsum dolor sit.
-
-Cras adipiscing enim eu turpis egestas. Vel eros donec ac odio tempor. Aliquet enim tortor at auctor urna nunc id cursus. Et ultrices neque ornare aenean euismod elementum nisi quis eleifend. Porttitor lacus luctus accumsan tortor posuere ac ut. Morbi tempus iaculis urna id volutpat lacus laoreet non. Iaculis eu non diam phasellus vestibulum lorem sed. Malesuada nunc vel risus commodo viverra maecenas accumsan lacus. Blandit massa enim nec dui nunc mattis enim ut. Odio facilisis mauris sit amet massa vitae tortor condimentum lacinia. Tempus urna et pharetra pharetra massa.
-
-Aliquam sem fringilla ut morbi. Bibendum arcu vitae elementum curabitur vitae nunc sed velit dignissim. Sit amet venenatis urna cursus eget nunc scelerisque viverra mauris. Faucibus pulvinar elementum integer enim neque. Posuere sollicitudin aliquam ultrices sagittis orci a. Scelerisque varius morbi enim nunc faucibus a pellentesque sit amet. Massa vitae tortor condimentum lacinia quis vel eros donec. Eget est lorem ipsum dolor sit amet consectetur adipiscing. Rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar. Pulvinar sapien et ligula ullamcorper malesuada. Lacinia at quis risus sed vulputate odio. Tincidunt lobortis feugiat vivamus at. At varius vel pharetra vel turpis nunc eget. Nulla posuere sollicitudin aliquam ultrices sagittis orci. Vestibulum rhoncus est pellentesque elit ullamcorper. Enim tortor at auctor urna nunc id cursus metus aliquam. Et netus et malesuada fames ac.
-
-Etiam dignissim diam quis enim. Proin nibh nisl condimentum id venenatis a condimentum vitae sapien. Et tortor at risus viverra adipiscing at in. Dui nunc mattis enim ut. Odio facilisis mauris sit amet massa vitae. Velit laoreet id donec ultrices tincidunt arcu non sodales neque. Mauris in aliquam sem fringilla ut morbi tincidunt augue interdum. Donec enim diam vulputate ut. Consequat interdum varius sit amet mattis vulputate. Tellus orci ac auctor augue mauris augue neque. Nunc scelerisque viverra mauris in aliquam sem fringilla ut. Mauris in aliquam sem fringilla ut morbi. Enim nulla aliquet porttitor lacus luctus accumsan tortor. Feugiat vivamus at augue eget.</p>
+          <h1>Take a look at a few of my projects.</h1>
+          <Project
+            key="1"
+            name="YMCA of Columbia-Willamette"
+            text="In addition to my role overseeing and providing development strategy for the website, I create suites of marketing materials for ad campaigns and special events."
+            link="https://www.ymcacw.org/"
+          />
+          <Project
+            key="2"
+            name="US Mission Network"
+            text="I created the branding and website for this force for change within the YMCA."
+            link="https://usmissionnetwork.org/"
+          />
+          <Project
+            key="3"
+            name="Second Half Now"
+            text="I developed the WordPress site for this podcast dedicated to helping America's baby boomers live a life that matters."
+            link="https://secondhalfnow.com/"
+          />
       </Layout>
     </>
     )
