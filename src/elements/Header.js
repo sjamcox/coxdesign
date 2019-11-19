@@ -3,8 +3,13 @@ import Intro from './Intro'
 import MainNav from './MainNav'
 import Contacts from './Contacts'
 import styled from 'styled-components'
+import { device } from '../utilities/devices'
 
 const HeaderWrapper = styled.header`
+  @media ${device.mobileS} {
+    display:none;
+  }
+  @media ${device.tablet} {
     display: flex;
     position: sticky;
     top: 0;
@@ -17,6 +22,8 @@ const HeaderWrapper = styled.header`
     justify-content: space-between;
     background-color: #ffffff;
     padding: 20px;
+  }
+    
 `
 
 const Header = () => (
