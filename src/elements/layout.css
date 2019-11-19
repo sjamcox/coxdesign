@@ -23,8 +23,8 @@ h1 {
   line-height: 2.4rem;
 }
 
-p a {
-  color: orangered;
+a, p a {
+  color: #E54A38;
   font-weight: 700;
 }
 
@@ -34,4 +34,17 @@ button {
   border: none;
   background: linear-gradient(135deg, #dddddd, #dedede);
   font-weight: 700;
+}
+
+.project h3, .project p {
+  margin-bottom: 10px;
+}
+
+.allTheme {
+  background: #ffffff;
+  background: #eeeeee;
+  background: #e54A38;
+  background: #db2b39;
+  background: #12285B;
+  background: #27315B;
 }
