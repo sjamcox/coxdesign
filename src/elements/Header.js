@@ -22,8 +22,7 @@ const HeaderWrapper = styled.header`
     justify-content: space-between;
     background-color: #ffffff;
     padding: 20px;
-  }
-    
+  }    
 `
 
 const Header = () => (
