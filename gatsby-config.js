@@ -14,7 +14,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-typography`,
       options: {
-        pathToConfigModule: `src/utilities/typography`,
+        pathToConfigModule: `src/utils/typography`,
       },
     },
     {
@@ -40,7 +40,7 @@ module.exports = {
         background_color: `#333333`,
         theme_color: `#333333`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/sc.png`,
       },
     },
     {

@@ -3,7 +3,7 @@ import Intro from './Intro'
 import MainNav from './MainNav'
 import Contacts from './Contacts'
 import styled from 'styled-components'
-import { device } from '../utilities/devices'
+import { device } from '../utils/devices'
 
 const HeaderWrapper = styled.header`
   @media ${device.mobileS} {

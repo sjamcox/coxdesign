@@ -31,8 +31,9 @@ a, p a {
 button {
   padding: 8px 16px;
   border-radius: 4px;
-  border: none;
-  background: linear-gradient(135deg, #dddddd, #dedede);
+  border-color: black;
+  border: 2px;
+  background: #eeeeee;
   font-weight: 700;
 }
 
