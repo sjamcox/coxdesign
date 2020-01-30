@@ -4,11 +4,13 @@ import MainNav from './MainNav'
 import Contacts from './Contacts'
 import styled from 'styled-components'
 import { device } from '../utils/devices'
+import { colors } from '../utils/colors'
 
 const HeaderWrapper = styled.header`
   @media ${device.mobileS} {
     display:none;
   }
+
   @media ${device.tablet} {
     display: flex;
     position: sticky;
@@ -19,20 +21,27 @@ const HeaderWrapper = styled.header`
     flex-basis: 260px;
     flex-grow: 0;
     flex-shrink: 0;
-    justify-content: space-between;
     background-color: #ffffff;
-    padding: 20px;
   }    
 `
 
-const Header = () => (
+const InnerHeaderWrapper = styled.div`
+  height: 100%;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: ${colors.mineshaft}
+`
+
+export const Header = () => (
   <HeaderWrapper>
-    <Intro />
-    <MainNav />
-    <Contacts />
+    <InnerHeaderWrapper>
+      <Intro />
+      <MainNav />
+      <Contacts />
+    </InnerHeaderWrapper>
   </HeaderWrapper>
 )
-
-export default Header
 
 

@@ -12,10 +12,14 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-styled-components`,
     {
-      resolve: `gatsby-plugin-typography`,
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
-        pathToConfigModule: `src/utils/typography`,
-      },
+        fonts: [
+          `source serif pro\:400,600,700`,
+          `source sans pro\:300,400,400i,700`
+        ],
+        display: 'swap'
+      }
     },
     {
       resolve: `gatsby-source-filesystem`,
@@ -40,7 +44,7 @@ module.exports = {
         background_color: `#333333`,
         theme_color: `#333333`,
         display: `minimal-ui`,
-        icon: `src/images/sc.png`,
+        icon: `src/images/favcon.ico`,
       },
     },
     {

@@ -1,24 +1,28 @@
 import React from "react"
 import styled from 'styled-components'
-import Header from "./Header"
+import 'normalize.css'
+import { GlobalStyle } from '../utils/GlobalStyle'
+import { Header } from "./Header"
 import { ContentArea } from './ContentArea'
-import "./layout.css"
 
 const SiteContainer = styled.div`
   display: flex;
   width: 100%;
-  height: 100vh;
+  height: 100%;
 `
 
 const Layout = ({ children }) => {
 
   return (
+    <>
+      <GlobalStyle />
       <SiteContainer>
         <Header className="header"/>  
         <ContentArea>
           {children}
         </ContentArea>
       </SiteContainer>
+    </>
   )
 }
 
