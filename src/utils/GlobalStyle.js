@@ -16,10 +16,15 @@ export const GlobalStyle = createGlobalStyle`
     }
     
     h1, h2, h3, h4, h5, h6 {
-    margin-top: 0;
-    margin-bottom: 2rem;
-    font-family: 'Source Serif Pro', serif;
-    font-weight: 400;
+        margin-top: 0;
+        margin-bottom: 2rem;
+        font-family: 'Source Serif Pro', serif;
+        font-weight: 400;
+    }
+
+    h3, h4, h5, h6 {
+        margin-bottom: 0rem;
+        margin-top: 3rem;
     }
 
     h1 { font-weight: 700; font-size: 4.0rem; line-height: 1.2;  letter-spacing: -.1rem; }
@@ -37,8 +42,12 @@ export const GlobalStyle = createGlobalStyle`
         h5 { font-size: 2.4rem; }
         h6 { font-size: 1.5rem; }
     }
+
+    h1, h2, h3, h4, h5, h6, p {
+        max-width: 600px;
+    }
   
-    p {margin-top: 0; }
+    p { margin-top: 0; }
   
     a {
         color: ${colors.cinnabar};

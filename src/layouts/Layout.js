@@ -2,8 +2,8 @@ import React from "react"
 import styled from 'styled-components'
 import 'normalize.css'
 import { GlobalStyle } from '../utils/GlobalStyle'
-import { Header } from "./Header"
-import { ContentArea } from './ContentArea'
+import { Header } from "../elements/Header"
+import { ContentArea } from '../elements/ContentArea'
 
 const SiteContainer = styled.div`
   display: flex;

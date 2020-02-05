@@ -44,7 +44,7 @@ module.exports = {
         background_color: `#333333`,
         theme_color: `#333333`,
         display: `minimal-ui`,
-        icon: `src/images/favcon.ico`,
+        icon: `src/images/sc-monogram.png`,
       },
     },
     {

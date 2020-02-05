@@ -1,5 +1,5 @@
 import React from "react"
-import Layout from "../elements/layout"
+import Layout from "../layouts/Layout"
 import { Project } from "../elements/Project"
 
 const Projects = () => {
