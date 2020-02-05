@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { graphql } from 'gatsby'
-import Layout from '../elements/layout'
+import Layout from './Layout'
 
 class postLayout extends Component {
     render() {

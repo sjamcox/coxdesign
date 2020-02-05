@@ -1,5 +1,5 @@
 import React from "react"
-import Layout from "../elements/layout"
+import Layout from "../layouts/Layout"
 
 const About = ({location}) => (
     <Layout location={location}>
