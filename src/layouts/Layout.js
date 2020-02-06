@@ -9,6 +9,7 @@ const SiteContainer = styled.div`
   display: flex;
   width: 100%;
   height: 100%;
+  min-height: 100vh;
 `
 
 const Layout = ({ children }) => {
@@ -17,7 +18,7 @@ const Layout = ({ children }) => {
     <>
       <GlobalStyle />
       <SiteContainer>
-        <Header className="header"/>  
+        <Header/>  
         <ContentArea>
           {children}
         </ContentArea>

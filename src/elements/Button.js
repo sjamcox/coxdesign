@@ -23,12 +23,12 @@ const StyledButton = styled.button`
     }
 `
 
-export const Button = ({ children, link }) => {
+export const Button = ({ children, link, type}) => {
     return (
             <StyledButton>
-                <Link to={link}>
-                    {children}
-                </Link>
+               {type === "internal" && <Link to={link}>{children}</Link>}
+               {type === "external" && <a href={link}>{children}</a>}
+               
             </StyledButton>
     )
 }

@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import { device } from '../utils/devices'
 import { colors } from '../utils/colors'
 import logo from '../images/sc-monogram-inverted.png'
+import {useSpring, animated} from 'react-spring'
 
 const ContentWrapper = styled.main`
     background-color: ${colors.zodiac};
@@ -35,10 +36,16 @@ const Monogram = styled.img`
 `
 
 export const ContentArea = ({ children }) => {
+
+    const fade = useSpring({opacity: 1, from: {opacity: 0}})
+
     return (
         <ContentWrapper>
             <Link to="/"><Monogram src={logo} /></Link>
-            {children}
+            <animated.div style={fade}>
+                {children}
+            </animated.div>
+        
         </ContentWrapper>
     )
 }

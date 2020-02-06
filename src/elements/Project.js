@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Button } from '../elements/Button'
 
 const ProjectWrapper = styled.div`
     p {
@@ -12,7 +13,7 @@ export const Project = (props) => {
         <ProjectWrapper>
             <h3>{props.name}</h3>
             <p>{props.text}</p>
-            <a href={props.link}>Website →</a>
+            <Button link={props.link} type="external">Website →</Button>
         </ProjectWrapper>
     )
 }
