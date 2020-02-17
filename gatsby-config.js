@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: `https://coxdesign.co`,
+    baseUrl: `https://coxdesign.co`,
     title: `Cox Design`,
     description: `Portfolio of Sam Cox. Web Developer. Graphic Designer.`,
     author: `@sjamcox`,
@@ -29,11 +29,11 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/src/posts`,
-        name: 'posts'
-      }
+        name: `coffee`,
+        path: `${__dirname}/src/coffee`,
+      },
     },
     {
       resolve: `gatsby-plugin-manifest`,

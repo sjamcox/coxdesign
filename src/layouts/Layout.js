@@ -4,6 +4,7 @@ import 'normalize.css'
 import { GlobalStyle } from '../utils/GlobalStyle'
 import { Header } from "../elements/Header"
 import { ContentArea } from '../elements/ContentArea'
+import SEO from '../elements/seo'
 
 const SiteContainer = styled.div`
   display: flex;
@@ -16,6 +17,12 @@ const Layout = ({ children }) => {
 
   return (
     <>
+      <SEO 
+        title="One"
+        description="Two"
+        path="Three"
+        image="Four"
+      />
       <GlobalStyle />
       <SiteContainer>
         <Header/>  
