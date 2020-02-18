@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     siteUrl: `https://coxdesign.co`,
     title: `Sam Cox | Web Development & Graphic Design`,
-    description: `Blazingly fast websites using modern web technology.`,
+    description: `Portland-based developer creating blazingly fast websites using the latest web technology.`,
     author: `@sjamcox`,
     image: `src/images/sc-monogram.png`
   },
