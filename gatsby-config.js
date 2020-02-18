@@ -1,9 +1,10 @@
 module.exports = {
   siteMetadata: {
     baseUrl: `https://coxdesign.co`,
-    title: `Cox Design`,
-    description: `Portfolio of Sam Cox. Web Developer. Graphic Designer.`,
+    title: `Sam Cox | Web Development & Graphic Design`,
+    description: `Blazingly fast websites using modern web technology.`,
     author: `@sjamcox`,
+    image: `src/images/sc-monogram.png`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

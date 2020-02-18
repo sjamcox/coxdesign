@@ -2,7 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { useStaticQuery, graphql } from 'gatsby'
 
-const SEO = ({ post }) => {
+const SEO = () => {
   const data = useStaticQuery(graphql`
     {
       site {
@@ -10,6 +10,7 @@ const SEO = ({ post }) => {
           title
           description
           baseUrl
+          image
         }
       }
     }
@@ -27,19 +28,17 @@ const SEO = ({ post }) => {
     return null;
   }
 
-  const title = defaults.title
-  const description = defaults.description
+  const { title, description, image } = defaults
 
   return (
     <Helmet>
       <title>{title}</title>
       <meta name="description" content={description} />
+      <meta name="image" content={image} />
 
-      <meta property="og:type" content="article" />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
 
-      <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
     </Helmet>

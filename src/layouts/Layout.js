@@ -17,12 +17,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <SEO 
-        title="One"
-        description="Two"
-        path="Three"
-        image="Four"
-      />
+      <SEO />
       <GlobalStyle />
       <SiteContainer>
         <Header/>  

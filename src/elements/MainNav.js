@@ -16,6 +16,9 @@ const NavList = styled.ul`
 const NavItem = styled.li`
   margin-bottom: 10px;
   font-weight: 700;
+  a {
+    text-decoration: none;
+  }
 `
 
 const MainNav = () => {
