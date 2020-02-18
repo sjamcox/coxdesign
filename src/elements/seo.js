@@ -9,7 +9,7 @@ const SEO = () => {
         siteMetadata {
           title
           description
-          baseUrl
+          siteUrl
           image
         }
       }
