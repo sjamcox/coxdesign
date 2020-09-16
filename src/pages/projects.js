@@ -15,9 +15,9 @@ const Projects = () => {
           />
           <Project
             key="2"
-            name="US Mission Network"
-            text="I created the branding and website for this force for change within the YMCA."
-            link="https://usmissionnetwork.org/"
+            name="Y Ipsum"
+            text="A tool developed to provide relevant placeholder text for marketing people at the YMCA."
+            link="https://yipsum.com/"
           />
           <Project
             key="3"
